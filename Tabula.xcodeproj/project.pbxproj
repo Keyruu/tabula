@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C795722C7499F400CF3F6A /* TabulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795712C7499F400CF3F6A /* TabulaApp.swift */; };
+		11C795742C7499F400CF3F6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795732C7499F400CF3F6A /* ContentView.swift */; };
+		11C795762C7499F400CF3F6A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795752C7499F400CF3F6A /* Item.swift */; };
+		11C795782C7499F500CF3F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C795772C7499F500CF3F6A /* Assets.xcassets */; };
+		11C7957B2C7499F500CF3F6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C7957A2C7499F500CF3F6A /* Preview Assets.xcassets */; };
+		11C795862C7499F500CF3F6A /* TabulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795852C7499F500CF3F6A /* TabulaTests.swift */; };
+		11C795902C7499F500CF3F6A /* TabulaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7958F2C7499F500CF3F6A /* TabulaUITests.swift */; };
+		11C795922C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795912C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11C795822C7499F500CF3F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C795662C7499F400CF3F6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C7956D2C7499F400CF3F6A;
+			remoteInfo = Tabula;
+		};
+		11C7958C2C7499F500CF3F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C795662C7499F400CF3F6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C7956D2C7499F400CF3F6A;
+			remoteInfo = Tabula;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11C7956E2C7499F400CF3F6A /* Tabula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabula.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C795712C7499F400CF3F6A /* TabulaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaApp.swift; sourceTree = "<group>"; };
+		11C795732C7499F400CF3F6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11C795752C7499F400CF3F6A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		11C795772C7499F500CF3F6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11C7957A2C7499F500CF3F6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11C7957C2C7499F500CF3F6A /* Tabula.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tabula.entitlements; sourceTree = "<group>"; };
+		11C795812C7499F500CF3F6A /* TabulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C795852C7499F500CF3F6A /* TabulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaTests.swift; sourceTree = "<group>"; };
+		11C7958B2C7499F500CF3F6A /* TabulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabulaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C7958F2C7499F500CF3F6A /* TabulaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaUITests.swift; sourceTree = "<group>"; };
+		11C795912C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11C7956B2C7499F400CF3F6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7957E2C7499F500CF3F6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C795882C7499F500CF3F6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C795652C7499F400CF3F6A = {
+			isa = PBXGroup;
+			children = (
+				11C795702C7499F400CF3F6A /* Tabula */,
+				11C795842C7499F500CF3F6A /* TabulaTests */,
+				11C7958E2C7499F500CF3F6A /* TabulaUITests */,
+				11C7956F2C7499F400CF3F6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11C7956F2C7499F400CF3F6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11C7956E2C7499F400CF3F6A /* Tabula.app */,
+				11C795812C7499F500CF3F6A /* TabulaTests.xctest */,
+				11C7958B2C7499F500CF3F6A /* TabulaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11C795702C7499F400CF3F6A /* Tabula */ = {
+			isa = PBXGroup;
+			children = (
+				11C795712C7499F400CF3F6A /* TabulaApp.swift */,
+				11C795732C7499F400CF3F6A /* ContentView.swift */,
+				11C795752C7499F400CF3F6A /* Item.swift */,
+				11C795772C7499F500CF3F6A /* Assets.xcassets */,
+				11C7957C2C7499F500CF3F6A /* Tabula.entitlements */,
+				11C795792C7499F500CF3F6A /* Preview Content */,
+			);
+			path = Tabula;
+			sourceTree = "<group>";
+		};
+		11C795792C7499F500CF3F6A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11C7957A2C7499F500CF3F6A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11C795842C7499F500CF3F6A /* TabulaTests */ = {
+			isa = PBXGroup;
+			children = (
+				11C795852C7499F500CF3F6A /* TabulaTests.swift */,
+			);
+			path = TabulaTests;
+			sourceTree = "<group>";
+		};
+		11C7958E2C7499F500CF3F6A /* TabulaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11C7958F2C7499F500CF3F6A /* TabulaUITests.swift */,
+				11C795912C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift */,
+			);
+			path = TabulaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11C7956D2C7499F400CF3F6A /* Tabula */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C795952C7499F500CF3F6A /* Build configuration list for PBXNativeTarget "Tabula" */;
+			buildPhases = (
+				11C7956A2C7499F400CF3F6A /* Sources */,
+				11C7956B2C7499F400CF3F6A /* Frameworks */,
+				11C7956C2C7499F400CF3F6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tabula;
+			productName = Tabula;
+			productReference = 11C7956E2C7499F400CF3F6A /* Tabula.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11C795802C7499F500CF3F6A /* TabulaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C795982C7499F500CF3F6A /* Build configuration list for PBXNativeTarget "TabulaTests" */;
+			buildPhases = (
+				11C7957D2C7499F500CF3F6A /* Sources */,
+				11C7957E2C7499F500CF3F6A /* Frameworks */,
+				11C7957F2C7499F500CF3F6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C795832C7499F500CF3F6A /* PBXTargetDependency */,
+			);
+			name = TabulaTests;
+			productName = TabulaTests;
+			productReference = 11C795812C7499F500CF3F6A /* TabulaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11C7958A2C7499F500CF3F6A /* TabulaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C7959B2C7499F500CF3F6A /* Build configuration list for PBXNativeTarget "TabulaUITests" */;
+			buildPhases = (
+				11C795872C7499F500CF3F6A /* Sources */,
+				11C795882C7499F500CF3F6A /* Frameworks */,
+				11C795892C7499F500CF3F6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C7958D2C7499F500CF3F6A /* PBXTargetDependency */,
+			);
+			name = TabulaUITests;
+			productName = TabulaUITests;
+			productReference = 11C7958B2C7499F500CF3F6A /* TabulaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C795662C7499F400CF3F6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					11C7956D2C7499F400CF3F6A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					11C795802C7499F500CF3F6A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 11C7956D2C7499F400CF3F6A;
+					};
+					11C7958A2C7499F500CF3F6A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 11C7956D2C7499F400CF3F6A;
+					};
+				};
+			};
+			buildConfigurationList = 11C795692C7499F400CF3F6A /* Build configuration list for PBXProject "Tabula" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11C795652C7499F400CF3F6A;
+			productRefGroup = 11C7956F2C7499F400CF3F6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11C7956D2C7499F400CF3F6A /* Tabula */,
+				11C795802C7499F500CF3F6A /* TabulaTests */,
+				11C7958A2C7499F500CF3F6A /* TabulaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11C7956C2C7499F400CF3F6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7957B2C7499F500CF3F6A /* Preview Assets.xcassets in Resources */,
+				11C795782C7499F500CF3F6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7957F2C7499F500CF3F6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C795892C7499F500CF3F6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11C7956A2C7499F400CF3F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C795742C7499F400CF3F6A /* ContentView.swift in Sources */,
+				11C795762C7499F400CF3F6A /* Item.swift in Sources */,
+				11C795722C7499F400CF3F6A /* TabulaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7957D2C7499F500CF3F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C795862C7499F500CF3F6A /* TabulaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C795872C7499F500CF3F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C795902C7499F500CF3F6A /* TabulaUITests.swift in Sources */,
+				11C795922C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C795832C7499F500CF3F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C7956D2C7499F400CF3F6A /* Tabula */;
+			targetProxy = 11C795822C7499F500CF3F6A /* PBXContainerItemProxy */;
+		};
+		11C7958D2C7499F500CF3F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C7956D2C7499F400CF3F6A /* Tabula */;
+			targetProxy = 11C7958C2C7499F500CF3F6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11C795932C7499F500CF3F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11C795942C7499F500CF3F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		11C795962C7499F500CF3F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tabula/Tabula.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tabula/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.Tabula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		11C795972C7499F500CF3F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tabula/Tabula.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tabula/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.Tabula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		11C795992C7499F500CF3F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.TabulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabula.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabula";
+			};
+			name = Debug;
+		};
+		11C7959A2C7499F500CF3F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.TabulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabula.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabula";
+			};
+			name = Release;
+		};
+		11C7959C2C7499F500CF3F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.TabulaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Tabula;
+			};
+			name = Debug;
+		};
+		11C7959D2C7499F500CF3F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.TabulaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Tabula;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11C795692C7499F400CF3F6A /* Build configuration list for PBXProject "Tabula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C795932C7499F500CF3F6A /* Debug */,
+				11C795942C7499F500CF3F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C795952C7499F500CF3F6A /* Build configuration list for PBXNativeTarget "Tabula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C795962C7499F500CF3F6A /* Debug */,
+				11C795972C7499F500CF3F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C795982C7499F500CF3F6A /* Build configuration list for PBXNativeTarget "TabulaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C795992C7499F500CF3F6A /* Debug */,
+				11C7959A2C7499F500CF3F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C7959B2C7499F500CF3F6A /* Build configuration list for PBXNativeTarget "TabulaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C7959C2C7499F500CF3F6A /* Debug */,
+				11C7959D2C7499F500CF3F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11C795662C7499F400CF3F6A /* Project object */;
+}
