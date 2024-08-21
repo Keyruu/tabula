@@ -2,58 +2,44 @@
 //  ContentView.swift
 //  Tabula
 //
-//  Created by Lucas Rott on 20.08.24.
+//  Created by Lucas Rott on 21.08.24.
 //
 
+import AppKit
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    // Define a property using @AppStorage
+    @AppStorage("modifier") private var modifier = "option"
+    @AppStorage("scrollSpeed") private var scrollSpeed = 20.0
+    @AppStorage("xEnabled") private var xEnabled = true
+    @AppStorage("yEnabled") private var yEnabled = true
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        VStack {
+            Form {
+                Picker("Modifier", selection: $modifier) {
+                    Text("Option \(Image(systemName: "option"))").tag("option")
+                    Text("Control \(Image(systemName: "control"))").tag("control")
+                    Text("Command \(Image(systemName: "command"))").tag("command")
+                    Text("Shift \(Image(systemName: "shift"))").tag("shift")
+                    Text("Function \(Image(systemName: "globe"))").tag("function")
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                LabeledContent("Scroll Direction") {
+                    Toggle("X", isOn: $xEnabled)
+                    Toggle("Y", isOn: $yEnabled).padding(.leading, 10)
                 }
+                Slider(value: $scrollSpeed, in: 5...200, step: 5) {
+                    Text("Scroll Speed")
+                } minimumValueLabel: {
+                    Text("5")
+                } maximumValueLabel: {
+                    Text("200")
+                }
+                Text("\(scrollSpeed, specifier: "%.0f")").frame(width: 200).multilineTextAlignment(.center)
             }
-        } detail: {
-            Text("Select an item")
-        }
+            Divider()
+            Button("Quit", action: { NSApplication.shared.terminate(nil) })
+        }.padding(10)
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
