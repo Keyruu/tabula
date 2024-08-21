@@ -10,9 +10,6 @@
 		11C795722C7499F400CF3F6A /* TabulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795712C7499F400CF3F6A /* TabulaApp.swift */; };
 		11C795782C7499F500CF3F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C795772C7499F500CF3F6A /* Assets.xcassets */; };
 		11C7957B2C7499F500CF3F6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C7957A2C7499F500CF3F6A /* Preview Assets.xcassets */; };
-		11C795862C7499F500CF3F6A /* TabulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795852C7499F500CF3F6A /* TabulaTests.swift */; };
-		11C795902C7499F500CF3F6A /* TabulaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7958F2C7499F500CF3F6A /* TabulaUITests.swift */; };
-		11C795922C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795912C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift */; };
 		11C795A32C7611C100CF3F6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795A22C7611C100CF3F6A /* ContentView.swift */; };
 		11C795A52C7620A100CF3F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795A42C7620A100CF3F6A /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -41,10 +38,7 @@
 		11C7957A2C7499F500CF3F6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11C7957C2C7499F500CF3F6A /* Tabula.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tabula.entitlements; sourceTree = "<group>"; };
 		11C795812C7499F500CF3F6A /* TabulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11C795852C7499F500CF3F6A /* TabulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaTests.swift; sourceTree = "<group>"; };
 		11C7958B2C7499F500CF3F6A /* TabulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabulaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11C7958F2C7499F500CF3F6A /* TabulaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaUITests.swift; sourceTree = "<group>"; };
-		11C795912C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabulaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		11C795A22C7611C100CF3F6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11C795A42C7620A100CF3F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				11C795702C7499F400CF3F6A /* Tabula */,
-				11C795842C7499F500CF3F6A /* TabulaTests */,
-				11C7958E2C7499F500CF3F6A /* TabulaUITests */,
 				11C7956F2C7499F400CF3F6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,23 +105,6 @@
 				11C7957A2C7499F500CF3F6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		11C795842C7499F500CF3F6A /* TabulaTests */ = {
-			isa = PBXGroup;
-			children = (
-				11C795852C7499F500CF3F6A /* TabulaTests.swift */,
-			);
-			path = TabulaTests;
-			sourceTree = "<group>";
-		};
-		11C7958E2C7499F500CF3F6A /* TabulaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				11C7958F2C7499F500CF3F6A /* TabulaUITests.swift */,
-				11C795912C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift */,
-			);
-			path = TabulaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C795862C7499F500CF3F6A /* TabulaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C795902C7499F500CF3F6A /* TabulaUITests.swift in Sources */,
-				11C795922C7499F500CF3F6A /* TabulaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
