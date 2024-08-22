@@ -37,29 +37,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             mouseMonitor = nil
             
-            let modifierAny = UserDefaults.standard
-                .object(forKey: "modifier")
-            let modifier = modifierAny != nil ? modifierAny as! String : "option"
-            
-            var flag: NSEvent.ModifierFlags
-            switch modifier {
-            case "control":
-                flag = .control
-            case "command":
-                flag = .command
-            case "shift":
-                flag = .shift
-            case "function":
-                flag = .function
-            default:
-                flag = .option
-            }
-            
-            if event.modifierFlags.contains(flag) {
+            if event.modifierFlags.contains(self.getModifierFlag()) {
                 let scrollSpeedAny = UserDefaults.standard
                     .object(forKey: "scrollSpeed")
                 let scrollSpeed = scrollSpeedAny != nil ? scrollSpeedAny as! CGFloat : 20.0
                 
+                let naturalScrollingAny = UserDefaults.standard.object(forKey: "naturalScrolling")
+                let naturalScrolling = naturalScrollingAny != nil ? naturalScrollingAny as! Bool : true
                 let xEnabledAny = UserDefaults.standard.object(forKey: "xEnabled")
                 let xEnabled = xEnabledAny != nil ? xEnabledAny as! Bool : true
                 let yEnabledAny = UserDefaults.standard.object(forKey: "yEnabled")
@@ -84,10 +68,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             var y: Int32 = 0
                             
                             if xEnabled {
-                                x = Int32(-delta.x * scrollSpeed)
+                                x = Int32(delta.x * scrollSpeed)
                             }
                             if yEnabled {
-                                y = Int32(-delta.y * scrollSpeed)
+                                y = Int32(delta.y * scrollSpeed)
+                            }
+                            
+                            if naturalScrolling {
+                                x = -x
+                                y = -y
                             }
                             
                             let scrollEvent = CGEvent(scrollWheelEvent2Source: nil, units: .pixel, wheelCount: 2, wheel1: y, wheel2: x, wheel3: 0)
@@ -106,6 +95,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 lastPos = nil
             }
         }
+    }
+    
+    func getModifierFlag() -> NSEvent.ModifierFlags {
+        let modifierAny = UserDefaults.standard
+            .object(forKey: "modifier")
+        let modifier = modifierAny != nil ? modifierAny as! String : "option"
+        
+        var flag: NSEvent.ModifierFlags
+        switch modifier {
+        case "control":
+            flag = .control
+        case "command":
+            flag = .command
+        case "shift":
+            flag = .shift
+        case "function":
+            flag = .function
+        default:
+            flag = .option
+        }
+        
+        return flag
     }
     
     func applicationWillTerminate(_ notification: Notification) {
