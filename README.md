@@ -24,4 +24,8 @@ So I made this to enable to not have to move my hand :D
 
 You can download the latest version from the [Releases](https://github.com/keyruu/Tabula/releases) page.
 
-brew is coming soon.
+Or use brew:
+
+```bash
+brew install keyruu/tap/keyruu-tabula
+```
