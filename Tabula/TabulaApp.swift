@@ -9,8 +9,6 @@ import SwiftUI
 
 @main
 struct TabulaApp: App {
-    @AppStorage("accessibilityDenied") private var accessiblity = false
-    
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {

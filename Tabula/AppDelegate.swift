@@ -13,18 +13,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var flagsMonitor: Any?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let key: String = kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String
-        let options = [key: true]
-        let enabled = AXIsProcessTrustedWithOptions(options as CFDictionary)
+        let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeRetainedValue() as NSString: true]
+        let enabled = AXIsProcessTrustedWithOptions(options)
         if !enabled {
-            let alert = NSAlert()
-            alert.messageText = "Accessibility Permission is not granted"
-            alert.informativeText = "For this app to work it needs to have accessibility permission granted in Security & Privacy. You need to start the app again after you allowed the permission."
-            alert.addButton(withTitle: "OK")
-            alert.alertStyle = .warning
-            alert.runModal()
-            NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility")!)
-            NSApp.terminate(nil)
+            CGEvent(scrollWheelEvent2Source: nil, units: .pixel, wheelCount: 2, wheel1: 0, wheel2: 0, wheel3: 0)?.post(tap: CGEventTapLocation.cghidEventTap)
+            UserDefaults.standard.setValue(true, forKey: "needsPermission")
+            return
+        } else {
+            UserDefaults.standard.setValue(false, forKey: "needsPermission")
         }
         
         var mouseMonitor: Any?
