@@ -42,12 +42,12 @@ struct ContentView: View {
                         Toggle("Y", isOn: $yEnabled)
                     }
                     VStack {
-                        Slider(value: $scrollSpeed, in: 5...200, step: 5) {
+                        Slider(value: $scrollSpeed, in: 1...100) {
                             Text("Scroll Speed:")
                         } minimumValueLabel: {
-                            Text("5")
+                            Text("1")
                         } maximumValueLabel: {
-                            Text("200")
+                            Text("100")
                         }
                     }
                     Text("\(scrollSpeed, specifier: "%.0f")")
