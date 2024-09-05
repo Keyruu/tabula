@@ -33,7 +33,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             mouseMonitor = nil
             
-            if event.modifierFlags.contains(self.getModifierFlag()) {
+            var all = self.allModifiers()
+            all.remove(self.getModifierFlag())
+            if event.modifierFlags.contains(self.getModifierFlag()) && event.modifierFlags.intersection(all).isEmpty {
                 let scrollSpeedAny = UserDefaults.standard
                     .object(forKey: "scrollSpeed")
                 let scrollSpeed = scrollSpeedAny != nil ? scrollSpeedAny as! CGFloat : 20.0
@@ -91,6 +93,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 lastPos = nil
             }
         }
+    }
+    
+    func allModifiers() -> NSEvent.ModifierFlags {
+        return [.control,.function,.command,.option,.shift]
     }
     
     func getModifierFlag() -> NSEvent.ModifierFlags {
