@@ -16,9 +16,7 @@ So I made this to enable to not have to move my hand :D
 
 ## Features
 
-- Change modifier key
-- Change scroll speed
-- Toggle x and y axis
+<img alt="Settings" src="images/tabula-settings.png" width="300px"/>
 
 ## Download
 
