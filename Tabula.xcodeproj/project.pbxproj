@@ -13,6 +13,7 @@
 		11C795A32C7611C100CF3F6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795A22C7611C100CF3F6A /* ContentView.swift */; };
 		11C795A52C7620A100CF3F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C795A42C7620A100CF3F6A /* AppDelegate.swift */; };
 		11C795A92C7875CA00CF3F6A /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 11C795A82C7875CA00CF3F6A /* LaunchAtLogin */; };
+		DBB7ED102C8CC69F00E055E6 /* PermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7ED0F2C8CC69F00E055E6 /* PermissionsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		11C7958B2C7499F500CF3F6A /* TabulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabulaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C795A22C7611C100CF3F6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11C795A42C7620A100CF3F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBB7ED0F2C8CC69F00E055E6 /* PermissionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				11C7957C2C7499F500CF3F6A /* Tabula.entitlements */,
 				11C795792C7499F500CF3F6A /* Preview Content */,
 				11C795A22C7611C100CF3F6A /* ContentView.swift */,
+				DBB7ED0F2C8CC69F00E055E6 /* PermissionsService.swift */,
 			);
 			path = Tabula;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB7ED102C8CC69F00E055E6 /* PermissionsService.swift in Sources */,
 				11C795A52C7620A100CF3F6A /* AppDelegate.swift in Sources */,
 				11C795722C7499F400CF3F6A /* TabulaApp.swift in Sources */,
 				11C795A32C7611C100CF3F6A /* ContentView.swift in Sources */,
@@ -412,7 +416,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.4.0;
+				CURRENT_PROJECT_VERSION = 1.5.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Tabula/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S6Q428WC7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -425,7 +429,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.Tabula;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -442,7 +446,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.4.0;
+				CURRENT_PROJECT_VERSION = 1.5.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Tabula/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S6Q428WC7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -455,7 +459,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.keyruu.Tabula;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
